@@ -21,3 +21,4 @@ Execute the Script:
 
 Save it as filesystem_management.sh, set executable permissions (chmod +x filesystem_management.sh), and execute (./filesystem_management.sh).
 
+![Capture1111](https://github.com/user-attachments/assets/6b74ad20-00c5-4f42-acfb-a2865d08f516)
