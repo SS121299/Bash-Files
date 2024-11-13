@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Function to create a directory
+create_directory() {
+    read -p "Enter directory path to create: " dir
+    mkdir -p "$dir" && echo "Directory $dir created."
+}
+
+# Function to set permissions
+set_permissions() {
+    read -p "Enter directory path: " dir
+    read -p "Enter permissions (e.g., 755): " perm
+    chmod "$perm" "$dir" && echo "Permissions set to $perm for $dir."
+}
+
+# Function to check disk usage
+check_disk_usage() {
+    df -h
+}
+
+# Menu
+echo "Select an option:"
+echo "1. Create Directory"
+echo "2. Set Permissions"
+echo "3. Check Disk Usage"
+read -p "Choice: " choice
+
+case $choice in
+    1) create_directory ;;
+    2) set_permissions ;;
+    3) check_disk_usage ;;
+    *) echo "Invalid choice" ;;
+esac
