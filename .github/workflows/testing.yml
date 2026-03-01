@@ -1,0 +1,15 @@
+name: myapp
+
+on:
+   push:
+      branches: 
+       - main
+jobs:
+  install:
+   runs-on: ubuntu-latest
+
+
+   steps:
+     - name: installing nginx
+       run: sudo apt-get install nginx
+     
