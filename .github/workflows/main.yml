@@ -1,0 +1,13 @@
+name: hellow
+on:
+  push: null
+  branch:
+    - main
+jobs:
+  greet:
+    run-on: ubuntu-latest
+    steps:
+      - name: say hellow to me
+      - run echo "$USER"
+      - name: say hellow to username
+      - run echo "this is me"
