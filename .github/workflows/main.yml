@@ -5,7 +5,7 @@ on:
     - main
 jobs:
   greet:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: say hellow to me
       - run echo "$USER"
